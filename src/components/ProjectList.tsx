@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
-import { ProjectType } from '../common/types';
 import { nanoid } from 'nanoid';
+import { ProjectType } from '../common/types';
 
 type ProjectListProps = {
   projects: ProjectType[],

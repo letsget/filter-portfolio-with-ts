@@ -11,17 +11,15 @@ const ToolBarItem: FC<ToolBarItemProps> = ({
   filterName,
   selected,
   onSelectFilter,
-}) => {
-  return (
-    <div
-      className={
-        selected === filterName ? 'toolbar-item__active' : 'toolbar-item'
-      }
-      onClick={() => onSelectFilter(filterName)}
-    >
-      {filterName}
-    </div>
-  );
-};
+}) => (
+  <div
+    className={
+      selected === filterName ? 'toolbar-item__active' : 'toolbar-item'
+    }
+    onClick={() => onSelectFilter(filterName)}
+  >
+    {filterName}
+  </div>
+);
 
 export default ToolBarItem;

@@ -4,12 +4,12 @@ import Portfolio from '../../components/portfolio';
 import { PROJECTS } from '../../common/constants';
 import { ProjectType } from '../../types';
 
-const PortfolioPage: FC = () => {
-  const projectsWithIds = PROJECTS.map((project: ProjectType) => ({
-    id: nanoid(),
-    ...project,
-  }));
+const projectsWithIds = PROJECTS.map((project: ProjectType) => ({
+  id: nanoid(),
+  ...project,
+}));
 
+const PortfolioPage: FC = () => {
   return <Portfolio projects={projectsWithIds} />;
 };
 

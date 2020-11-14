@@ -19,8 +19,6 @@ const Portfolio: FC<Props> = ({ projects }) => {
   const projectsToRender: ProjectType[] =
     selected === 'All' ? projects : filterProjects(projects, selected);
 
-  console.log(projectsToRender);
-
   return (
     <div className="container">
       <Toolbar
